@@ -6,16 +6,15 @@
     </head>
     <body>
 
-        <?php?>
-        
-            <form action="site.php" method="post">
-                Password: <input type="password" name="name"> <br>
-                <input type="submit">
-            </form>
-            <br></br>
-                
-                <?php 
-                    echo $_POST["password"]
-                ?>
+        <?php
+            $friends = array("kevin", "karen", "Oscar", "Jim");
+            $friends[4] = "Mike"
+            echo count ($firends);
+        ?>
+
+
+
+
+
     </body>
 </HTML>
