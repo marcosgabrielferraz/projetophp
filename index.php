@@ -7,24 +7,27 @@
     <body>
 
         <?php 
-           class Book{
-            var $title;
-            var $author;
-            var $pages;
+        class Book{
+            var $name;
+            var $major;
+            var $gpa;
 
-
-            function _construct($aTitle, $aAuthor, $aPages){
-                    $this->title = $aTitle;
-                    $this->author = $aAuthor;
-                    $this->pages = $aPages;
+            function _construct($name, $major, $gpa){
+                $this->name = $name;
+                $this->major = $major;
+                $this->gpa = $gpa;
             }
-           }
+            function hasHonors(){
+                if($this->gpa >= 4.0){
+                    return "true";
+                }  
+                return "falce";            
+        }
 
-           $book1 = new Book("Harry", "JK Rowling", 400);
-           $book1 -> title = "Hunger Games";
-           $book2 = new Book("Lord of the Rings", "Tolkien", 700);
+        $student1 = new Student ("Jim", "Business", 2.8)
+        $student2 = new Student ("Pam", "Art", 3.6)
 
-        echo $book1-> title;
+        echo $student2->hashonors();
         ?>
     
 
