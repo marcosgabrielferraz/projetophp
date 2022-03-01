@@ -8,13 +8,14 @@
 
 
         <?php
-            function sayHi($name, $age){
-                echo "Hello $name, you are $ageage <br>";
-            }
+           function cube($num){
+              echo "Hello";
+              return;
+              
+           }
+          
+           echo cube(4);
 
-            sayHi("tom", 40);
-            sayHi("Dave", 13);
-            sayHi("Oscar",80);
         ?>
 
 
