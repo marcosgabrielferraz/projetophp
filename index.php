@@ -5,10 +5,10 @@
         <title></title>
     </head>
     <body>
-        <?php
-            echo "comments are fun!";
-        ?>
 
+        <?php include "header.html" ?>
+        <p>Hello world</p>
+        <?php include "footer.html" ?>
 
-    </body>
+    </body> 
 </HTML>
