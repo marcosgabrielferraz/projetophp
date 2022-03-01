@@ -7,32 +7,32 @@
     <body>
 
         <?php 
-            class Movie {
-                public $title;
-                private $rating;
-
-                function _construct($title, $rating){
-                    $this->title = $title;
-                    $this->setRating($rating);
-                }
-
-                function getRating(){
-                    return $this->rating;
-                }
-
-                function setReting($rating){
-                    if($ratng == "G" ||$ratng == "PG" ||$ratng == "PG-13" ||$ratng == "R" ||$ratng == "NR" ||){
-                          $this->rating = $rating;
-                    }else{
-                        $this->rating = "NR"
-                    }
-                }
+           class Chef {
+            function makeChiken(){
+                echo "The chef makes chicken <br>";
             }
+            function makeChiken(){
+                echo "The chef makes salad <br>";
+            }
+            function makeChiken(){
+                echo "The chef makes bbq ribs <br>";
+            }
+        }
 
-            $avengers = new Movie ("Avengers", "PG-13");
-                    // G, PG, PG-13, R, NR
-                    $avengers->setRating("asdf")
-            echo $avengers->getRating();
+        class ItalianChef extends chef {
+            function makePasta(){
+                echo "The chef makes pasta"
+            }
+            function makeSpacialdish(){
+                echo "The chef makes chicken parm";
+            }
+        }
+
+        $chef = new Chef();
+        $chef->makeSpecialDish();
+
+        $italianChef = new Chef();
+        $italianChef->makeSpecialDish();
         ?>
     
 
