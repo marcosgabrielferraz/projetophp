@@ -6,19 +6,30 @@
     </head>
     <body>
 
+        <form action="site.php" method="post">
+            First num:<input type="number" step="0.001" name="num1"><br>
+            op: <input type="textbox" name="op"><br>
+            second Num:<input type="number" step="0.001" name="num2"><br>
+            <input type="submit">
+        </form>
 
         <?php
-            function getrandmax($num1, $num2, $num3){
-                if($num1>= $num2 && $num1>= $num3){
-                    return $num1;
-                } elseif ($num2 >= $num1 && $num2 >= $num3){
-                    return $num2;
-                }else{
-                    return $num3;
-                }
-            }
+         $num1 = $_POST["num1"];
+         $num2 = $_POST["num2"];
+         $op = $_POST["op"];
 
-            echo getMax(300, 300, 400);
+         if($op == "+"){
+             echo $num1 + $num2;
+         } elseif($op == "-"){
+             echo $num1 - $num2;
+         }elseif($op == "/"){
+            echo $num1 / $num2;
+         }elseif($op == "*"){
+            echo $num1 * $num2;
+         }else{
+             echo "Invalid Operator";
+         }
+
         ?>
 
 
