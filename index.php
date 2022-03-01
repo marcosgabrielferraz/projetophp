@@ -6,9 +6,12 @@
     </head>
     <body>
 
-        <?php include "header.html" ?>
-        <p>Hello world</p>
-        <?php include "footer.html" ?>
+        <?php 
+            include "useful-tools.php";
+            echo #feeInMile;
+            
+        ?>
+    
 
     </body> 
 </HTML>
